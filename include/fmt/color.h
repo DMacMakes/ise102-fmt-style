@@ -35,6 +35,7 @@ enum class color : uint32_t {
   brown = 0xA52A2A,                    // rgb(165,42,42)
   burly_wood = 0xDEB887,               // rgb(222,184,135)
   cadet_blue = 0x5F9EA0,               // rgb(95,158,160)
+  charcoal = 0x232323,
   chartreuse = 0x7FFF00,               // rgb(127,255,0)
   chocolate = 0xD2691E,                // rgb(210,105,30)
   coral = 0xFF7F50,                    // rgb(255,127,80)

@@ -5,6 +5,8 @@
 #include <cstdlib>
 #include <chrono>
 #include <thread>
+#include <string>
+#include <algorithm>
 #include "scn/all.h"
 #include "fmt/core.h"
 #include "fmt/format.h"
@@ -34,8 +36,22 @@ using fmt::bg;
 using scn::input;
 using scn::prompt;
 using fmt::color;
+using std::string;
 using namespace std::literals::chrono_literals;
 
+string strToUpper(string& str)
+{
+  string upper_str = str;
+  std::transform(upper_str.begin(), upper_str.end(), upper_str.begin(), ::toupper);
+  return upper_str;
+}
+
+std::string strToUpper(const char* str)
+{
+  string upper_str = string(str);
+  std::transform(upper_str.begin(), upper_str.end(), upper_str.begin(), ::toupper);
+  return upper_str;
+}
 
 void delay(int duration_ms)
 {
