@@ -1,0 +1,2 @@
+#run = "clang++-7 -I. -I./include -std=c++17 -pthread -o fmt-style main.cpp lib/libscn.a lib/libfmt.a && ./fmt-style"
+run = "make && ./fmt-style"
