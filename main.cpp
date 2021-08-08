@@ -28,10 +28,10 @@ int main() {
   auto stone_style = makeStyle( color(0x222222), color::silver);
   print("\t Stone face: ");
   print(stone_style, strToUpper(" Hello mushy one, do not be surprised! \n"));
-  delay(1000);
+  delay(1700);
   print("\t Stone face: ");
   print(stone_style, strToUpper(" I have learned english from my friend who dresses like a banana. \n"));
-  delay(1000);
+  delay(1700);
   print("\t Stone face: ");
   print(stone_style, strToUpper(" Welcome to our home!! \n\n"));
   
